@@ -3,8 +3,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { DataGrid } from "@material-ui/data-grid";
+import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+import CancelRoundedIcon from "@material-ui/icons/CancelRounded";
 import "./Data.css";
-import { Grid, RootRef } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 function Data() {
   const [state, setState] = useState({
@@ -41,10 +43,9 @@ function Data() {
 
   return (
     <>
-      <h1>Data</h1>
       {Object.keys(state.data).length > 0 ? (
-        <div className="wrapper">
-          <div className="container">
+        <div id="identification" className="wrapper">
+          <div  className="container">
             <h2>Identifaction Data</h2>
             <Grid
               container
@@ -125,36 +126,66 @@ function Data() {
               alignItems="center"
             >
               <Grid item>
-                <div className="headline">COMPANY NAME</div>
-                <b>{state.data.identificationData.companyName}</b>
+                <div className="headline">OTC TRADING</div>
+                <br />
+                {state.data.services.otcTrading ? (
+                  <CheckCircleIcon
+                    fontSize="large"
+                    style={{ color: "#1DC340" }}
+                  />
+                ) : (
+                  <CancelRoundedIcon
+                    fontSize="large"
+                    style={{ color: "#FF6162" }}
+                  />
+                )}
               </Grid>
               <Grid item>
-                <div className="headline">LEI CODE</div>
-                <b>{state.data.identificationData.leiCode}</b>
+                <div className="headline">CUSODIAN BANKS FOR FX SPOT</div>{" "}
+                <br />
+                {state.data.services.custodianBanksForFxSpot ? (
+                  <CheckCircleIcon
+                    fontSize="large"
+                    style={{ color: "#1DC340" }}
+                  />
+                ) : (
+                  <CancelRoundedIcon
+                    fontSize="large"
+                    style={{ color: "#FF6162" }}
+                  />
+                )}
               </Grid>
               <Grid item>
-                <div className="headline">VAT NUMBER</div>
-                <b>{state.data.identificationData.vatNumber}</b>
-              </Grid>
-            </Grid>
-            <Grid
-              container
-              spacing={10}
-              direction="row"
-              justify="center"
-              alignItems="space-evenly"
-            >
-              <Grid item>
-                <div className="headline">COMPANY EMAIL</div>
-                <b>{state.data.identificationData.companyEmail}</b>
-              </Grid>
-              <Grid item>
-                <div className="headline">COMPANY PHONE</div>
-                <b> {state.data.identificationData.companyPhone}</b>
+                <div className="headline">CLEARING BROKER FOR ETD/OTC</div>
+                <br />
+                {state.data.services.clearingBroker ? (
+                  <CheckCircleIcon
+                    fontSize="large"
+                    style={{ color: "#1DC340" }}
+                  />
+                ) : (
+                  <CancelRoundedIcon
+                    fontSize="large"
+                    style={{ color: "#FF6162" }}
+                  />
+                )}
               </Grid>
               <Grid item>
-                <div className="headline">COMPANY FAX</div>
-                <b>{state.data.identificationData.companyFax}</b>
+                <div className="headline">
+                  EXECUTING BROKER FOR LISTED DERIVATIES
+                </div>
+                <br />
+                {state.data.services.executingBroker ? (
+                  <CheckCircleIcon
+                    fontSize="large"
+                    style={{ color: "#1DC340" }}
+                  />
+                ) : (
+                  <CancelRoundedIcon
+                    fontSize="large"
+                    style={{ color: "#FF6162" }}
+                  />
+                )}
               </Grid>
             </Grid>
           </div>

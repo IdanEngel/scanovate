@@ -1,17 +1,19 @@
 body {
   background-color: #f6f8fc;
 }
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .headline {
   color: rgb(150, 118, 118);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  font-size: medium;
 }
+
 
 .container {
   border-radius: 15px;
@@ -22,7 +24,7 @@ body {
   box-sizing: border-box;
   margin-bottom: 3rem;
   background-color: white;
-  width: 50%;
+  width: 55%;
 }
 
 .MuiDataGrid-row.Mui-odd {
