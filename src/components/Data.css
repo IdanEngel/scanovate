@@ -1,0 +1,30 @@
+body {
+  background-color: #f6f8fc;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headline {
+  color: rgb(150, 118, 118);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  border-radius: 15px;
+  border-style: outset;
+  border-width: thin;
+  border: 1px, rgb(150, 118, 118);
+  box-shadow: gray;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+  background-color: white;
+  width: 50%;
+}
+
+.MuiDataGrid-row.Mui-odd {
+  background-color: #fafbfd;
+}
