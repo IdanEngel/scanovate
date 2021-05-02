@@ -1,6 +1,8 @@
 /* Global Styles */
 :root {
+  --primary-color: #17a2b8;
   --dark-color: #343a40;
+  --light-color: #f4f4f4;
 }
 
 * {
@@ -9,75 +11,32 @@
   padding: 0;
 }
 
-body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #333;
-}
+
 
 a {
   color: var(--primary-color);
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
-}
 
-
-
-/* Utilities */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 2rem;
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-}
-
-/* Text Styles*/
-
-
-
-.text-primary {
-  color: var(--primary-color);
-}
-
-
-
-
-
-
-
-
-
-
-.btn-dark,
-.bg-dark,
-.badge-dark,
-.alert-dark {
-  background: var(--dark-color);
+.bg-primary
+ {
+  background: var(--primary-color);
   color: #fff;
 }
 
-
-
-
-
-
-.btn:hover {
-  opacity: 0.8;
+.bg-dark
+ {
+  background: var(--light-color);
+  color: #333;
 }
 
 
-
-
-
-
-
+.bg-dark
+ {
+  background: var(--dark-color);
+  color: #fff;
+}
 
 
 /* Navbar */
@@ -94,9 +53,6 @@ ul {
   opacity: 0.9;
 }
 
-.navbar ul {
-  display: flex;
-}
 
 .navbar a {
   color: #fff;
@@ -115,26 +71,39 @@ ul {
 
 
 
-
 /* Mobile Styles */
 @media (max-width: 700px) {
-  
+  .container {
+    margin-top: 8rem;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  /* Text Styles */
+  .x-large {
+    font-size: 3rem;
+  }
+
+  .large {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
   /* Navbar */
   .navbar {
     display: block;
     text-align: center;
   }
 
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
+ 
 
   .navbar h1 {
     margin-bottom: 1rem;
   }
 
-  .navbar .welcome {
-    display: none;
-  }
 }

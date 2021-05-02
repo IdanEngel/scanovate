@@ -1,24 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import HomeIcon from '@material-ui/icons/Home';
 
 const Navbar = () => {
-  const guestLinks = (
-    <ul>
-      <li>
-        <Link to="/users">All Users</Link>
-      </li>
-    </ul>
-  );
 
+// Nav component, return to the default home rout 
   return (
     <nav className="navbar bg-dark">
       <h1>
         <Link to="/">
-          <i className="fas fa-code"></i> Home Page
+         <HomeIcon style={{fontSize: 25}}/> Home Page
         </Link>
       </h1>
-      <> {guestLinks}</>
     </nav>
   );
 };

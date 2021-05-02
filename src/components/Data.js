@@ -13,6 +13,7 @@ function Data() {
     data: {},
   });
 
+  //   Fetching data from .json file
   useEffect(() => {
     axios.get("http://localhost:5000/").then((res) => {
       setState({
@@ -20,10 +21,9 @@ function Data() {
       });
     });
   }, []);
-  console.log(state.data);
 
+  //   Setting the address column list
   const addressColumns = [
-    // { field: "id", headerName: "ID", width: 200, sortable: true },
     { field: "address", headerName: "ADDRESS", width: 200, sortable: true },
     { field: "city", headerName: "CITY" },
     { field: "province", headerName: "PROVINCE", width: 130 },
@@ -31,13 +31,13 @@ function Data() {
     { field: "country", headerName: "COUNTRY", width: 125 },
     { field: "civicNumber", headerName: "CIVIC NUMBER", width: 170 },
   ];
-  const contactInforrmationColumns = [
-    // { field: "id", headerName: "ID", width: 200, sortable: true },
+  //   Setting the contact information column list
+  const contactInformationColumns = [
     { field: "fullName", headerName: "FULL NAME", width: 140, sortable: true },
     { field: "position", headerName: "POSITION", width: 125 },
     { field: "email", headerName: "EMAIL", width: 160, minWidth: 160 },
     { field: "mobile", headerName: "MOBILE PHONE", minWidth: 200, width: 200 },
-    { field: "businessPhone", headerName: "BUISNES PHONE", width: 170 },
+    { field: "businessPhone", headerName: "BUSINESS PHONE", width: 170 },
     { field: "fax", headerName: "FAX", width: 150 },
   ];
 
@@ -45,13 +45,13 @@ function Data() {
     <>
       {Object.keys(state.data).length > 0 ? (
         <div id="identification" className="wrapper">
-          <div  className="container">
-            <h2>Identifaction Data</h2>
+          <div className="container">
+            <h2>Identification Data</h2>
             <Grid
               container
               spacing={2}
               direction="row"
-              justify="center"
+              justify="flex-start"
               alignItems="center"
             >
               <Grid item>
@@ -71,7 +71,7 @@ function Data() {
               container
               spacing={10}
               direction="row"
-              justify="center"
+              justify="flex-start"
               alignItems="space-evenly"
             >
               <Grid item>
@@ -88,14 +88,7 @@ function Data() {
               </Grid>
             </Grid>
           </div>
-          <div
-            className="container"
-            style={
-              {
-                //   width: "90%",
-              }
-            }
-          >
+          <div className="container">
             <h2>Addresses</h2>
             <DataGrid
               className="grid"
@@ -111,19 +104,22 @@ function Data() {
             <DataGrid
               className="grid"
               autoHeight
-              rows={state.data.contactInforrmation}
+              rows={state.data.contactInformation}
               rowHeight={25}
-              columns={contactInforrmationColumns}
+              columns={contactInformationColumns}
             />
           </div>
           <div className="container">
-            <h2>Identifaction Data</h2>
+            <h2>Identification Data</h2>
             <Grid
               container
               spacing={2}
               direction="row"
               justify="center"
               alignItems="center"
+              style={{
+                "text-align": "center",
+              }}
             >
               <Grid item>
                 <div className="headline">OTC TRADING</div>

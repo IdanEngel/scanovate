@@ -1,5 +1,6 @@
-.App {
-  text-align: center;
+.route{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
-
-

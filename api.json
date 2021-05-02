@@ -28,7 +28,7 @@
         "civicNumber": "98721638126389"
       }
     ],
-    "contactInforrmation": [
+    "contactInformation": [
       {"id": 0,
         "fullName": "Dianna Moss",
         "position": "CFO",
@@ -41,7 +41,7 @@
         "id": 1,
         "fullName": "Dianna Moss",
         "position": "CFO",
-        "email": "dianathequeen@moss.com",
+        "email": "me@moss.com",
         "mobile": "+972-522975842",
         "businessPhone": "+972544252888",
         "fax": "03-6424232"
@@ -59,7 +59,7 @@
           "id": 3,
           "fullName": "Dianna Moss",
           "position": "CFO",
-          "email": "dianathequeen@moss.com",
+          "email": "idan@gmail.com",
           "mobile": "+972-522975842",
           "businessPhone": "+972544252888",
           "fax": "03-6424232"
