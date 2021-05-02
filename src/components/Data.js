@@ -13,7 +13,7 @@ function Data() {
     data: {},
   });
 
-  //   Fetching data from .json file
+  //   Fetching data from the server 
   useEffect(() => {
     axios.get("http://localhost:5000/").then((res) => {
       setState({
