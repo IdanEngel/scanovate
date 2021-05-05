@@ -1,0 +1,88 @@
+body {
+  background-color: #f6f8fc;
+  /* font-family: "Raleway", sans-serif; */
+  /* font-family: "Folio"; */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 0 13rem;
+}
+.headline {
+  color: rgb(150, 118, 118);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: medium;
+}
+
+.container {
+  border-radius: 15px;
+  border-style: outset;
+  border-width: thin;
+  border: 1px, rgb(150, 118, 118);
+  box-shadow: gray;
+  box-sizing: border-box;
+  background-color: #fff;
+  max-width: 1100px;
+  min-width: 115%;
+  margin: auto;
+  overflow: hidden;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.MuiDataGrid-row.Mui-even {
+  background-color: #fafbfd;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.contact {
+  display: flex;
+  cursor: pointer;
+}
+.grid {
+  border: none !important;
+}
+.it {
+  width: 25px;
+  height: 25px;
+}
+.MuiDataGrid-cell .MuiDataGrid-cellWithRenderer .MuiDataGrid-cellLeft {
+  justify-content: flex-end !important;
+  background-color: "blue";
+  font-size: 500px;
+}
+div.MuiDataGrid-main
+  > div:nth-child(2)
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(8) {
+  justify-content: flex-end;
+}
+.organization-data{
+padding-top: 6rem;
+padding-left: 0.5rem;
+align-self: end;
+display: flex;
+color: #0063D6;
+font-weight: 700;
+}
+#identification-data{
+  padding-top: 0;
+  margin-top: 1rem;
+}
+h2 {
+  padding-bottom: 3rem;
+}

@@ -9,6 +9,8 @@ app.use(express.json({ extended: false }));
 
 // fetching data from .json api
 app.get("/", (req, res) => {
+  // Should solve the cors error
+  res.header("Access-Control-Allow-Origin", "*");
   res.send(api.data);
 });
 
