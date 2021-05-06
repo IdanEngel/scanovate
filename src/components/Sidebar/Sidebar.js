@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Sidebar() {
   // Variable that holds all the list link components
   const routeLinks = (
-    <ul>
+    <ul className="sidebar-routes">
       <li className="route-links">
         <Link to="/mandates" className="a">
           <b> Mandates </b>
@@ -43,8 +43,7 @@ function Sidebar() {
             borderRadius: "50%",
             height: "40px",
             width: "43px",
-            marginTop: "1rem",
-            marginRight: "1rem"
+            marginTop: "2rem",
           }}
         >
           <DomainRoundedIcon

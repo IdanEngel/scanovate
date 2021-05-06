@@ -1,7 +1,5 @@
 body {
   background-color: #f6f8fc;
-  /* font-family: "Raleway", sans-serif; */
-  /* font-family: "Folio"; */
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
@@ -22,17 +20,13 @@ body {
 
 .container {
   border-radius: 15px;
-  border-style: outset;
-  border-width: thin;
-  border: 1px, rgb(150, 118, 118);
-  box-shadow: gray;
+  box-shadow: 0px 0px 2px 1px rgb(199 194 194 / 50%);
   box-sizing: border-box;
   background-color: #fff;
   max-width: 1100px;
-  min-width: 115%;
+  min-width: 100%;
   margin: auto;
   overflow: hidden;
-  padding: 1rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -40,6 +34,8 @@ body {
 .MuiDataGrid-row.Mui-even {
   background-color: #fafbfd;
 }
+
+
 .title {
   display: flex;
   justify-content: space-between;
@@ -47,9 +43,15 @@ body {
 .contact {
   display: flex;
   cursor: pointer;
+  padding: 0.5rem 1rem 0 0;
 }
 .grid {
-  border: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  padding: 1rem;
+  border-top-style: "groove";
+  border-width: "thin";
+  border-color: "#eff4f92e";
 }
 .it {
   width: 25px;
@@ -80,11 +82,27 @@ div.MuiDataGrid-main
   margin-top: 1rem;
 }
 h2 {
-  padding-bottom: 3rem;
+  padding: 1rem;
 }
 #identification-data
   > div
   > div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-10
   > div:nth-child(2) {
   padding-right: 6rem;
+}
+#identification
+  > div
+  > div
+  > div.MuiDataGrid-main
+  > div.MuiDataGrid-columnsContainer
+  > div
+  > div
+  > div.MuiDataGrid-columnSeparator {
+  color: white;
+}
+#identification > div > div > div.MuiDataGrid-main > div > div > div {
+  font-weight: bold;
+}
+#identification > div:nth-child(5) {
+  padding-bottom: 2rem;
 }

@@ -65,7 +65,7 @@ function Contact() {
              className="grid"
              autoHeight
              rows={state.data}
-             rowHeight={45}
+             rowHeight={55}
              columns={contactInformationColumns}
              style={{ border: "none" }}
            />

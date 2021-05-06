@@ -4,11 +4,11 @@
   border-style: outset;
   border-width: thin;
   border-color: #eff4f92e;
-  width: 20%;
+  width: 22%;
 }
 .side-headline {
   display: flex;
-  padding: 1rem 1rem 0 1rem;
+  padding: 0 1rem 0 1rem;
   border-style: groove;
   border-width: thin;
   border-color: #eff4f92e;
@@ -34,7 +34,7 @@ a:hover {
 .data-header {
   background-color: #ffff;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1.5rem;
   border-left: 6px solid #0063d6;
   font-size: larger;
   color: #0063d6;
@@ -59,10 +59,13 @@ li {
 .status-header {
   color: #a4aab7;
 }
+.sidebar-routes {
+  padding-left: 1rem;
+}
 .approved {
   background-color: #1dc340;
   border-radius: 15px;
-  width: 30%;
+  width: 26%;
   padding-left: 15px;
   color: white;
 }

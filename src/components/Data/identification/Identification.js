@@ -18,7 +18,14 @@ function Identification() {
   return (
     <>
       {Object.keys(state.data).length > 0 ? (
-        <Grid style={{ paddingBottom: "2rem" }}>
+        <Grid
+          style={{
+            padding: "2rem 1rem 1rem 1rem",
+            borderTopStyle: "groove",
+            borderWidth: "thin",
+            borderColor: "#eff4f92e"
+          }}
+        >
           <Grid
             container
             spacing={7}

@@ -41,13 +41,13 @@ function Addresses() {
     {
       field: "address",
       headerName: "ADDRESS",
-      width: 200,
+      width: 275,
       sortable: true,
       resizable: true,
     },
-    { field: "city", headerName: "CITY" },
+    { field: "city", headerName: "CITY", width: 130  },
     { field: "province", headerName: "PROVINCE", width: 130 },
-    { field: "zip", headerName: "ZIP" },
+    { field: "zip", headerName: "ZIP",  width: 100 },
     {
       field: "country",
       headerName: "COUNTRY",
@@ -67,7 +67,7 @@ function Addresses() {
           {params.value}
         </div>
       ),
-      width: 125,
+      width: 170,
     },
     { field: "civicNumber", headerName: "CIVIC NUMBER", width: 170 },
   ];
@@ -78,7 +78,7 @@ function Addresses() {
             className="grid"
             autoHeight
             rows={state.data}
-            rowHeight={45}
+            rowHeight={55}
             columns={addressColumns}
           />
       ) : null}

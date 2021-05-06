@@ -16,15 +16,6 @@
       "zip": "1235214",
       "country": "italy",
       "civicNumber": "98721638126389"
-    },
-    {
-      "id": 1,
-      "address": "Pizza Duci Delgi Abruzzi",
-      "city": "Milano",
-      "province": "Mi",
-      "zip": "1235214",
-      "country": "italy",
-      "civicNumber": "98721638126389"
     }
   ],
   "contactInformation": [
@@ -54,16 +45,8 @@
       "mobile": "+972-522975842",
       "businessPhone": "+972544252888",
       "fax": "03-6424232"
-    },
-    {
-      "id": 3,
-      "fullName": "Dianna Moss",
-      "position": "CFO",
-      "email": "idan@gmail.com",
-      "mobile": "+972-522975842",
-      "businessPhone": "+972544252888",
-      "fax": "03-6424232"
     }
+  
   ],
   "services": {
     "otcTrading": false,
