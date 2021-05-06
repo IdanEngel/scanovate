@@ -2,19 +2,31 @@
 const express = require("express");
 const api = require("../api.json");
 
-
 const app = express();
 
 app.use(express.json({ extended: false }));
 
-// fetching data from .json api
-app.get("/", (req, res) => {
+// fetching data from api.json
+app.get("/identificationData", (req, res) => {
   // Should solve the cors error
   res.header("Access-Control-Allow-Origin", "*");
-  res.send(api.data);
+  res.send(api.identificationData);
 });
-
-
+app.get("/addresses", (req, res) => {
+  // Should solve the cors error
+  res.header("Access-Control-Allow-Origin", "*");
+  res.send(api.addresses);
+});
+app.get("/contactInformation", (req, res) => {
+  // Should solve the cors error
+  res.header("Access-Control-Allow-Origin", "*");
+  res.send(api.contactInformation);
+});
+app.get("/services", (req, res) => {
+  // Should solve the cors error
+  res.header("Access-Control-Allow-Origin", "*");
+  res.send(api.services);
+});
 
 const port = process.env.PORT || 5000;
 

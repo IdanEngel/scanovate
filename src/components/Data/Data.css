@@ -55,11 +55,7 @@ body {
   width: 25px;
   height: 25px;
 }
-.MuiDataGrid-cell .MuiDataGrid-cellWithRenderer .MuiDataGrid-cellLeft {
-  justify-content: flex-end !important;
-  background-color: "blue";
-  font-size: 500px;
-}
+
 div.MuiDataGrid-main
   > div:nth-child(2)
   > div
@@ -71,18 +67,24 @@ div.MuiDataGrid-main
   > div:nth-child(8) {
   justify-content: flex-end;
 }
-.organization-data{
-padding-top: 6rem;
-padding-left: 0.5rem;
-align-self: end;
-display: flex;
-color: #0063D6;
-font-weight: 700;
+.organization-data {
+  padding-top: 6rem;
+  padding-left: 0.5rem;
+  align-self: end;
+  display: flex;
+  color: #0063d6;
+  font-weight: 700;
 }
-#identification-data{
+#identification-data {
   padding-top: 0;
   margin-top: 1rem;
 }
 h2 {
   padding-bottom: 3rem;
+}
+#identification-data
+  > div
+  > div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-10
+  > div:nth-child(2) {
+  padding-right: 6rem;
 }

@@ -1,75 +1,74 @@
 {
-  "data": {
-    "identificationData": {
-      "companyName": "Assicurazioni Generali SPA",
-      "leiCode": "BFHX11DKCI129KDMMS21",
-      "vatNumber": "DKSK3342N1DS9MB",
-      "companyEmail": "example@example.com",
-      "companyPhone": "03-7420508",
-      "companyFax": "03-75203289"
+  "identificationData": {
+    "companyName": "Assicurazioni Generali SPA",
+    "leiCode": "BFHX11DKCI129KDMMS21",
+    "vatNumber": "DKSK3342N1DS9MB",
+    "companyEmail": "example@example.com",
+    "companyPhone": "03-7420508",
+    "companyFax": "03-75203289"
+  },
+  "addresses": [
+    {
+      "id": 0,
+      "address": "Pizza Duci Delgi Abruzzi",
+      "city": "Milano",
+      "province": "Mi",
+      "zip": "1235214",
+      "country": "italy",
+      "civicNumber": "98721638126389"
     },
-    "addresses": [
-      {
-        "id": 0,
-        "address": "Pizza Duci Delgi Abruzzi",
-        "city": "Milano",
-        "province": "Mi",
-        "zip": "1235214",
-        "country": "italy",
-        "civicNumber": "98721638126389"
-      },
-      {
-        "id": 1,
-        "address": "Pizza Duci Delgi Abruzzi",
-        "city": "Milano",
-        "province": "Mi",
-        "zip": "1235214",
-        "country": "italy",
-        "civicNumber": "98721638126389"
-      }
-    ],
-    "contactInformation": [
-      {"id": 0,
-        "fullName": "Dianna Moss",
-        "position": "CFO",
-        "email": "diana@moss.com",
-        "mobile": "+972-522975842",
-        "businessPhone": "+972544252888",
-        "fax": "03-6424232"
-      },
-      {
-        "id": 1,
-        "fullName": "Dianna Moss",
-        "position": "CFO",
-        "email": "me@moss.com",
-        "mobile": "+972-522975842",
-        "businessPhone": "+972544252888",
-        "fax": "03-6424232"
-      },
-      {
-          "id": 2,
-          "fullName": "Dianna Moss",
-          "position": "CFO",
-          "email": "diana@moss.com",
-          "mobile": "+972-522975842",
-          "businessPhone": "+972544252888",
-          "fax": "03-6424232"
-        },
-        {
-          "id": 3,
-          "fullName": "Dianna Moss",
-          "position": "CFO",
-          "email": "idan@gmail.com",
-          "mobile": "+972-522975842",
-          "businessPhone": "+972544252888",
-          "fax": "03-6424232"
-        }
-    ],
-    "services": {
-      "otcTrading": false,
-      "custodianBanksForFxSpot": true,
-      "clearingBroker": false,
-      "executingBroker": true
+    {
+      "id": 1,
+      "address": "Pizza Duci Delgi Abruzzi",
+      "city": "Milano",
+      "province": "Mi",
+      "zip": "1235214",
+      "country": "italy",
+      "civicNumber": "98721638126389"
     }
+  ],
+  "contactInformation": [
+    {
+      "id": 0,
+      "fullName": "Dianna Moss",
+      "position": "CFO",
+      "email": "diana@moss.com",
+      "mobile": "+972-522975842",
+      "businessPhone": "+972544252888",
+      "fax": "03-6424232"
+    },
+    {
+      "id": 1,
+      "fullName": "Dianna Moss",
+      "position": "CFO",
+      "email": "me@moss.com",
+      "mobile": "+972-522975842",
+      "businessPhone": "+972544252888",
+      "fax": "03-6424232"
+    },
+    {
+      "id": 2,
+      "fullName": "Dianna Moss",
+      "position": "CFO",
+      "email": "diana@moss.com",
+      "mobile": "+972-522975842",
+      "businessPhone": "+972544252888",
+      "fax": "03-6424232"
+    },
+    {
+      "id": 3,
+      "fullName": "Dianna Moss",
+      "position": "CFO",
+      "email": "idan@gmail.com",
+      "mobile": "+972-522975842",
+      "businessPhone": "+972544252888",
+      "fax": "03-6424232"
+    }
+  ],
+  "services": {
+    "otcTrading": false,
+    "custodianBanksForFxSpot": true,
+    "clearingBroker": false,
+    "executingBroker": true
   }
 }
